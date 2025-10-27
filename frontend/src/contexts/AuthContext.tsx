@@ -1,4 +1,3 @@
-// Arquivo: frontend/src/contexts/AuthContext.tsx
 'use client';
 
 import {
@@ -9,15 +8,16 @@ import {
   ReactNode,
 } from 'react';
 import { useRouter } from 'next/navigation';
+// O caminho relativo '../services/api' está correto, assumindo que api.ts está em 'src/services/'
 import api from '../services/api'; 
 
-// --- CORREÇÃO AQUI: Adicionamos foto_url à interface Usuario ---
+// --- Interface correta para o seu Usuário ---
 interface Usuario {
   id: string;
   nome: string;
   email: string;
   tipo_usuario: 'aluno' | 'bibliotecario' | 'admin';
-  foto_url: string | null; // <-- NOVO CAMPO
+  foto_url: string | null;
 }
 
 interface AuthContextType {
@@ -29,9 +29,10 @@ interface AuthContextType {
   logout: () => void;
 }
 
-// O resto do arquivo continua o mesmo...
+// O contexto é criado aqui, mas NÃO é exportado
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+// O Provider é exportado
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [usuario, setUsuario] = useState<Usuario | null>(null);
   const [loading, setLoading] = useState(true);
@@ -47,7 +48,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
           api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
         } catch (error) {
           console.error("Erro ao carregar dados do usuário:", error);
-          logout();
+          logout(); // Limpa se os dados estiverem corrompidos
         }
       }
       setLoading(false);
@@ -57,12 +58,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const login = async (email: string, senha: string) => {
     const { data } = await api.post('/auth/login', { email, senha });
-    const { usuario: userData, token, perfis } = data; // Assumindo que a API retorna perfis
+    const { usuario: userData, token, perfis } = data; 
     localStorage.setItem('bibliotech_token', token);
     localStorage.setItem('bibliotech_usuario', JSON.stringify(userData));
     api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
     setUsuario(userData);
-    return perfis; // Retorna os perfis para a página de login decidir o que fazer
+    return perfis; 
   };
 
   const loginWithId = async (id: string, profile: 'aluno' | 'bibliotecario') => {
@@ -92,6 +93,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
+// --- CORREÇÃO ESTÁ AQUI ---
+// Esta é a exportação que faltava no seu arquivo salvo.
+// O 'page.tsx' (no Canvas) importa 'useAuth', então este arquivo DEVE exportá-lo.
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (context === undefined) {
@@ -99,3 +103,4 @@ export const useAuth = () => {
   }
   return context;
 };
+
