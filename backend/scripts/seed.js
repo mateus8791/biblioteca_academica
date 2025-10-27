@@ -39,7 +39,7 @@ async function popularBanco() {
     const categoriasResult = await client.query(`
       INSERT INTO "Categoria" (nome, descricao) VALUES
       ('Ficção Científica', 'Obras que exploram conceitos imaginativos baseados na ciência.'),
-      ('Distopia', 'Sociedades futurísticas opressivas.'),
+      ('Distopia', 'Sociedades futurísticas oplressivas.'),
       ('Fantasia', 'Mundos mágicos e criaturas fantásticas.'),
       ('Romance Brasileiro', 'Obras clássicas da literatura brasileira.')
       RETURNING id, nome;
