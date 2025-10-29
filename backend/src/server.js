@@ -39,7 +39,6 @@ app.use('/api', perfilRoutes); // 2. REGISTRE AQUI
 app.use('/api', conquistasRoutes); // 2. REGISTRE AQUI
 app.use('/api', financeiroRoutes); // 2. REGISTRE AQUI
 
-
 // Rota principal de teste
 app.get('/', (req, res) => {
   res.send('<h1>API do Bibliotech está no ar!</h1>');
