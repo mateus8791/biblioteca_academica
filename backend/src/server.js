@@ -17,6 +17,7 @@ const dashboardRoutes = require('./routes/dashboardRoutes'); // 1. IMPORTE AQUI
 const perfilRoutes = require('./routes/perfilRoutes'); // 1. IMPORTE AQUI
 const conquistasRoutes = require('./routes/conquistasRoutes'); // 1. IMPORTE AQUI
 const financeiroRoutes = require('./routes/financeiroRoutes'); // 1. IMPORTE AQUI
+const pedidoRoutes = require('./routes/pedidoRoutes');
 
 const app = express();
 
@@ -38,6 +39,7 @@ app.use('/api', dashboardRoutes); // 2. REGISTRE AQUI
 app.use('/api', perfilRoutes); // 2. REGISTRE AQUI
 app.use('/api', conquistasRoutes); // 2. REGISTRE AQUI
 app.use('/api', financeiroRoutes); // 2. REGISTRE AQUI
+app.use('/api', pedidoRoutes);
 
 // Rota principal de teste
 app.get('/', (req, res) => {

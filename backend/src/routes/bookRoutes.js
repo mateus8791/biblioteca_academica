@@ -1,3 +1,5 @@
+// backend/src/routes/livros.js (ou caminho equivalente)
+
 const express = require('express');
 const authMiddleware = require('../middlewares/authMiddleware');
 const multer = require('multer'); 
@@ -23,48 +25,53 @@ const router = express.Router();
 
 // Configuração do multer
 const upload = multer({
-    storage: multer.memoryStorage(),
-    fileFilter: (req, file, cb) => {
-        if (file.mimetype === 'text/csv' || file.originalname.endsWith('.csv')) {
-            cb(null, true);
-        } else {
-            cb(new Error('Apenas arquivos .csv são permitidos!'), false);
-        }
+  storage: multer.memoryStorage(),
+  fileFilter: (req, file, cb) => {
+    if (file.mimetype === 'text/csv' || file.originalname.endsWith('.csv')) {
+      cb(null, true);
+    } else {
+      cb(new Error('Apenas arquivos .csv são permitidos!'), false);
     }
+  }
 }); 
 
-// --- ROTAS PARA A COLEÇÃO DE LIVROS ---
-router.get('/livros', authMiddleware, getAllBooks);
+// ------------------------------
+// ROTAS PÚBLICAS (sem login)
+// ------------------------------
+
+// Lista todos os livros (público para a Storefront)
+router.get('/livros', getAllBooks);
+
+// Busca um livro por ID (público para a Storefront)
+router.get('/livros/:id', getBookById);
+
+// ------------------------------
+// ROTAS AUTENTICADAS
+// ------------------------------
+
+// Livros disponíveis (mantém proteção)
 router.get('/livros/disponiveis', authMiddleware, getAvailableBooks);
 
-// --- CORREÇÃO AQUI ---
-// Usamos 'checkRole' em vez de 'roleMiddleware'
+// Criação de livro (somente bibliotecário)
 router.post('/livros', authMiddleware, checkRole(['bibliotecario']), createBook); 
 
-
-// --- ROTAS PARA UM LIVRO ESPECÍFICO ---
-router.get('/livros/:id', authMiddleware, getBookById);
-
-// --- CORREÇÃO AQUI ---
+// Atualização de livro (somente bibliotecário)
 router.put('/livros/:id', authMiddleware, checkRole(['bibliotecario']), updateBook);
 
-// --- CORREÇÃO AQUI ---
+// Exclusão de livro (somente bibliotecário)
 router.delete('/livros/:id', authMiddleware, checkRole(['bibliotecario']), deleteBook);
 
-// --- ROTAS DE FILTRO ---
+// Filtros (mantém proteção)
 router.get('/livros/categoria/:categoriaId', authMiddleware, getBooksByCategory);
 router.get('/livros/autor/:autorId', authMiddleware, getBooksByAuthor);
 
-
-// --- Nova Rota de Importação ---
+// Importação via CSV (somente bibliotecário)
 router.post(
-    '/livros/importar', 
-    authMiddleware,
-    // --- CORREÇÃO AQUI ---
-    checkRole(['bibliotecario']), // Garante que só bibliotecários acessem
-    upload.single('file'), 
-    importarLivrosCSV 
+  '/livros/importar', 
+  authMiddleware,
+  checkRole(['bibliotecario']),
+  upload.single('file'), 
+  importarLivrosCSV 
 );
-// --- Fim da Nova Rota ---
 
 module.exports = router;
