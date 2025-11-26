@@ -15,10 +15,12 @@ const {
   getBookById,
   updateBook,
   deleteBook,
-  getAvailableBooks,     
+  getAvailableBooks,
   getBooksByCategory,
   getBooksByAuthor,
-  importarLivrosCSV      
+  importarLivrosCSV,
+  getNewBooks,
+  getPromotionalBooks
 } = require('../controllers/bookController');
 
 const router = express.Router();
@@ -39,18 +41,32 @@ const upload = multer({
 // ROTAS PÚBLICAS (sem login)
 // ------------------------------
 
+// Buscar livros novos (para landing page) - DEVE VIR ANTES DAS ROTAS PARAMETRIZADAS
+router.get('/livros-novos', getNewBooks);
+
+// Buscar livros em promoção (ofertas do dia) - DEVE VIR ANTES DAS ROTAS PARAMETRIZADAS
+router.get('/livros-promocao', getPromotionalBooks);
+
 // Lista todos os livros (público para a Storefront)
 router.get('/livros', getAllBooks);
 
-// Busca um livro por ID (público para a Storefront)
-router.get('/livros/:id', getBookById);
-
 // ------------------------------
-// ROTAS AUTENTICADAS
+// ROTAS AUTENTICADAS (rotas específicas DEVEM vir antes de /livros/:id)
 // ------------------------------
 
 // Livros disponíveis (mantém proteção)
 router.get('/livros/disponiveis', authMiddleware, getAvailableBooks);
+
+// Filtros (mantém proteção) - DEVEM VIR ANTES DE /livros/:id
+router.get('/livros/categoria/:categoriaId', authMiddleware, getBooksByCategory);
+router.get('/livros/autor/:autorId', authMiddleware, getBooksByAuthor);
+
+// ------------------------------
+// ROTAS PÚBLICAS PARAMETRIZADAS (devem vir por último)
+// ------------------------------
+
+// Busca um livro por ID (público para a Storefront) - DEVE SER A ÚLTIMA ROTA GET /livros/*
+router.get('/livros/:id', getBookById);
 
 // Criação de livro (somente bibliotecário)
 router.post('/livros', authMiddleware, checkRole(['bibliotecario']), createBook); 
@@ -60,10 +76,6 @@ router.put('/livros/:id', authMiddleware, checkRole(['bibliotecario']), updateBo
 
 // Exclusão de livro (somente bibliotecário)
 router.delete('/livros/:id', authMiddleware, checkRole(['bibliotecario']), deleteBook);
-
-// Filtros (mantém proteção)
-router.get('/livros/categoria/:categoriaId', authMiddleware, getBooksByCategory);
-router.get('/livros/autor/:autorId', authMiddleware, getBooksByAuthor);
 
 // Importação via CSV (somente bibliotecário)
 router.post(
@@ -75,3 +87,4 @@ router.post(
 );
 
 module.exports = router;
+

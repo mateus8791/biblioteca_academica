@@ -1,0 +1,2918 @@
+
+> backend@1.0.0 start
+> nodemon src/server.js
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:55:05.798Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "livros" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 103,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '160',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:55:05.982Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "livros" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 103,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '160',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:55:07.598Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "livros" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 103,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '160',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:55:10.777Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:56:08.189Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "livros" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 103,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '160',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:56:08.271Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "livros" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 103,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '160',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:56:13.200Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:57:13.984Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:57:37.306Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "livros" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 103,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '160',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:57:37.434Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "livros" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 103,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '160',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-17T23:57:42.310Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:02:21.648Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:02:21.909Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:02:26.577Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:02:59.800Z] POST /api/session/logout
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 76,
+  iat: 1763423385,
+  exp: 1763452185
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:11.515Z] POST /api/auth/login
+Authorization Header: Missing
+====================================
+
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:12.433Z] GET /api/diagnostico/token
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:12.446Z] GET /api/diagnostico/token
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:12.486Z] GET /api/dashboard/aluno
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+========== DEBUG DASHBOARD ALUNO ==========
+req.usuario: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+req.usuario.tipo_usuario: aluno
+Chamando getStudentDashboard...
+==========================================
+===== DEBUG DASHBOARD =====
+req.usuario completo: {
+  "id": "00000000-0000-0000-0000-000000000002",
+  "nome": "Aluno Teste",
+  "tipo_usuario": "aluno",
+  "foto_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s",
+  "accessLogId": 77,
+  "iat": 1763424191,
+  "exp": 1763452991
+}
+req.usuario.tipo_usuario: aluno
+req.usuario.tipo: undefined
+===========================
+Buscando dados do dashboard para o usuário 00000000-0000-0000-0000-000000000002...
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:12.579Z] GET /api/dashboard/aluno
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+========== DEBUG DASHBOARD ALUNO ==========
+req.usuario: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+req.usuario.tipo_usuario: aluno
+Chamando getStudentDashboard...
+==========================================
+===== DEBUG DASHBOARD =====
+req.usuario completo: {
+  "id": "00000000-0000-0000-0000-000000000002",
+  "nome": "Aluno Teste",
+  "tipo_usuario": "aluno",
+  "foto_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s",
+  "accessLogId": 77,
+  "iat": 1763424191,
+  "exp": 1763452991
+}
+req.usuario.tipo_usuario: aluno
+req.usuario.tipo: undefined
+===========================
+Buscando dados do dashboard para o usuário 00000000-0000-0000-0000-000000000002...
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:15.879Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:15.888Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:16.888Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:03:32.490Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:04:16.894Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:05:16.896Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:06:16.973Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:09:03.384Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: SELECT
+        l.id,
+        l.titulo,
+        l.autor,
+        l.capa_url,
+        l.isbn,
+        a_user.id as minha_avaliacao_id,
+        a_user.nota as minha_nota,
+        a_user.comentario as meu_comentario,
+        a_user.data_criacao as minha_data_avaliacao,
+        COUNT(a_all.id) as total_avaliacoes,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas
+       FROM livro l
+       LEFT JOIN avaliacoes a_user ON l.id = a_user.livro_id AND a_user.usuario_id = $1
+       LEFT JOIN avaliacoes a_all ON l.id = a_all.livro_id
+       WHERE a_user.id IS NOT NULL
+       GROUP BY l.id, l.titulo, l.autor, l.capa_url, l.isbn,
+                a_user.id, a_user.nota, a_user.comentario, a_user.data_criacao
+       ORDER BY a_user.data_criacao DESC
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:194:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:194:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:09:03.656Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: SELECT
+        l.id,
+        l.titulo,
+        l.autor,
+        l.capa_url,
+        l.isbn,
+        a_user.id as minha_avaliacao_id,
+        a_user.nota as minha_nota,
+        a_user.comentario as meu_comentario,
+        a_user.data_criacao as minha_data_avaliacao,
+        COUNT(a_all.id) as total_avaliacoes,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas
+       FROM livro l
+       LEFT JOIN avaliacoes a_user ON l.id = a_user.livro_id AND a_user.usuario_id = $1
+       LEFT JOIN avaliacoes a_all ON l.id = a_all.livro_id
+       WHERE a_user.id IS NOT NULL
+       GROUP BY l.id, l.titulo, l.autor, l.capa_url, l.isbn,
+                a_user.id, a_user.nota, a_user.comentario, a_user.data_criacao
+       ORDER BY a_user.data_criacao DESC
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:194:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:194:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:09:08.985Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:24:02.009Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:25:01.984Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:26:01.983Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:27:01.982Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:27:37.265Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: 
+      SELECT
+        l.id,
+        l.titulo,
+        STRING_AGG(DISTINCT aut.nome, ', ') as autor,
+        l.capa_url,
+        l.isbn,
+        a.id as minha_avaliacao_id,
+        a.nota as minha_nota,
+        a.comentario as meu_comentario,
+        a.data_criacao as minha_data_avaliacao,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas,
+        COUNT(DISTINCT a_all.id) as total_avaliacoes
+      FROM avaliacoes a
+      INNER JOIN livro l ON a.livro_id = l.id
+      LEFT JOIN livro_autor la ON l.id = la.livro_id
+      LEFT JOIN autor aut ON la.autor_id = aut.id
+      LEFT JOIN avaliacoes a_all ON a_all.livro_id = l.id
+      WHERE a.usuario_id = $1
+      GROUP BY l.id, l.titulo, l.capa_url, l.isbn,
+               a.id, a.nota, a.comentario, a.data_criacao
+      ORDER BY a.data_criacao DESC
+    
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] Query executada com sucesso. Rows encontradas: 3
+[MEUS-LIVROS] Livros processados: 3
+[MEUS-LIVROS] Enviando resposta de sucesso
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:27:37.504Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: 
+      SELECT
+        l.id,
+        l.titulo,
+        STRING_AGG(DISTINCT aut.nome, ', ') as autor,
+        l.capa_url,
+        l.isbn,
+        a.id as minha_avaliacao_id,
+        a.nota as minha_nota,
+        a.comentario as meu_comentario,
+        a.data_criacao as minha_data_avaliacao,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas,
+        COUNT(DISTINCT a_all.id) as total_avaliacoes
+      FROM avaliacoes a
+      INNER JOIN livro l ON a.livro_id = l.id
+      LEFT JOIN livro_autor la ON l.id = la.livro_id
+      LEFT JOIN autor aut ON la.autor_id = aut.id
+      LEFT JOIN avaliacoes a_all ON a_all.livro_id = l.id
+      WHERE a.usuario_id = $1
+      GROUP BY l.id, l.titulo, l.capa_url, l.isbn,
+               a.id, a.nota, a.comentario, a.data_criacao
+      ORDER BY a.data_criacao DESC
+    
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] Query executada com sucesso. Rows encontradas: 3
+[MEUS-LIVROS] Livros processados: 3
+[MEUS-LIVROS] Enviando resposta de sucesso
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:27:42.257Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:28:42.272Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:29:33.004Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: 
+      SELECT
+        l.id,
+        l.titulo,
+        STRING_AGG(DISTINCT aut.nome, ', ') as autor,
+        l.capa_url,
+        l.isbn,
+        a.id as minha_avaliacao_id,
+        a.nota as minha_nota,
+        a.comentario as meu_comentario,
+        a.data_criacao as minha_data_avaliacao,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas,
+        COUNT(DISTINCT a_all.id) as total_avaliacoes
+      FROM avaliacoes a
+      INNER JOIN livro l ON a.livro_id = l.id
+      LEFT JOIN livro_autor la ON l.id = la.livro_id
+      LEFT JOIN autor aut ON la.autor_id = aut.id
+      LEFT JOIN avaliacoes a_all ON a_all.livro_id = l.id
+      WHERE a.usuario_id = $1
+      GROUP BY l.id, l.titulo, l.capa_url, l.isbn,
+               a.id, a.nota, a.comentario, a.data_criacao
+      ORDER BY a.data_criacao DESC
+    
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] Query executada com sucesso. Rows encontradas: 3
+[MEUS-LIVROS] Livros processados: 3
+[MEUS-LIVROS] Enviando resposta de sucesso
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:29:33.214Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: 
+      SELECT
+        l.id,
+        l.titulo,
+        STRING_AGG(DISTINCT aut.nome, ', ') as autor,
+        l.capa_url,
+        l.isbn,
+        a.id as minha_avaliacao_id,
+        a.nota as minha_nota,
+        a.comentario as meu_comentario,
+        a.data_criacao as minha_data_avaliacao,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas,
+        COUNT(DISTINCT a_all.id) as total_avaliacoes
+      FROM avaliacoes a
+      INNER JOIN livro l ON a.livro_id = l.id
+      LEFT JOIN livro_autor la ON l.id = la.livro_id
+      LEFT JOIN autor aut ON la.autor_id = aut.id
+      LEFT JOIN avaliacoes a_all ON a_all.livro_id = l.id
+      WHERE a.usuario_id = $1
+      GROUP BY l.id, l.titulo, l.capa_url, l.isbn,
+               a.id, a.nota, a.comentario, a.data_criacao
+      ORDER BY a.data_criacao DESC
+    
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] Query executada com sucesso. Rows encontradas: 3
+[MEUS-LIVROS] Livros processados: 3
+[MEUS-LIVROS] Enviando resposta de sucesso
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:29:38.972Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:29:53.304Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: 
+      SELECT
+        l.id,
+        l.titulo,
+        STRING_AGG(DISTINCT aut.nome, ', ') as autor,
+        l.capa_url,
+        l.isbn,
+        a.id as minha_avaliacao_id,
+        a.nota as minha_nota,
+        a.comentario as meu_comentario,
+        a.data_criacao as minha_data_avaliacao,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas,
+        COUNT(DISTINCT a_all.id) as total_avaliacoes
+      FROM avaliacoes a
+      INNER JOIN livro l ON a.livro_id = l.id
+      LEFT JOIN livro_autor la ON l.id = la.livro_id
+      LEFT JOIN autor aut ON la.autor_id = aut.id
+      LEFT JOIN avaliacoes a_all ON a_all.livro_id = l.id
+      WHERE a.usuario_id = $1
+      GROUP BY l.id, l.titulo, l.capa_url, l.isbn,
+               a.id, a.nota, a.comentario, a.data_criacao
+      ORDER BY a.data_criacao DESC
+    
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] Query executada com sucesso. Rows encontradas: 3
+[MEUS-LIVROS] Livros processados: 3
+[MEUS-LIVROS] Enviando resposta de sucesso
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:29:53.536Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: 
+      SELECT
+        l.id,
+        l.titulo,
+        STRING_AGG(DISTINCT aut.nome, ', ') as autor,
+        l.capa_url,
+        l.isbn,
+        a.id as minha_avaliacao_id,
+        a.nota as minha_nota,
+        a.comentario as meu_comentario,
+        a.data_criacao as minha_data_avaliacao,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas,
+        COUNT(DISTINCT a_all.id) as total_avaliacoes
+      FROM avaliacoes a
+      INNER JOIN livro l ON a.livro_id = l.id
+      LEFT JOIN livro_autor la ON l.id = la.livro_id
+      LEFT JOIN autor aut ON la.autor_id = aut.id
+      LEFT JOIN avaliacoes a_all ON a_all.livro_id = l.id
+      WHERE a.usuario_id = $1
+      GROUP BY l.id, l.titulo, l.capa_url, l.isbn,
+               a.id, a.nota, a.comentario, a.data_criacao
+      ORDER BY a.data_criacao DESC
+    
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] Query executada com sucesso. Rows encontradas: 3
+[MEUS-LIVROS] Livros processados: 3
+[MEUS-LIVROS] Enviando resposta de sucesso
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:29:58.302Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:30:33.298Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: 
+      SELECT
+        l.id,
+        l.titulo,
+        STRING_AGG(DISTINCT aut.nome, ', ') as autor,
+        l.capa_url,
+        l.isbn,
+        a.id as minha_avaliacao_id,
+        a.nota as minha_nota,
+        a.comentario as meu_comentario,
+        a.data_criacao as minha_data_avaliacao,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas,
+        COUNT(DISTINCT a_all.id) as total_avaliacoes
+      FROM avaliacoes a
+      INNER JOIN livro l ON a.livro_id = l.id
+      LEFT JOIN livro_autor la ON l.id = la.livro_id
+      LEFT JOIN autor aut ON la.autor_id = aut.id
+      LEFT JOIN avaliacoes a_all ON a_all.livro_id = l.id
+      WHERE a.usuario_id = $1
+      GROUP BY l.id, l.titulo, l.capa_url, l.isbn,
+               a.id, a.nota, a.comentario, a.data_criacao
+      ORDER BY a.data_criacao DESC
+    
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] Query executada com sucesso. Rows encontradas: 3
+[MEUS-LIVROS] Livros processados: 3
+[MEUS-LIVROS] Enviando resposta de sucesso
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:30:33.513Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: 
+      SELECT
+        l.id,
+        l.titulo,
+        STRING_AGG(DISTINCT aut.nome, ', ') as autor,
+        l.capa_url,
+        l.isbn,
+        a.id as minha_avaliacao_id,
+        a.nota as minha_nota,
+        a.comentario as meu_comentario,
+        a.data_criacao as minha_data_avaliacao,
+        ROUND(AVG(a_all.nota)::numeric, 1) as media_notas,
+        COUNT(DISTINCT a_all.id) as total_avaliacoes
+      FROM avaliacoes a
+      INNER JOIN livro l ON a.livro_id = l.id
+      LEFT JOIN livro_autor la ON l.id = la.livro_id
+      LEFT JOIN autor aut ON la.autor_id = aut.id
+      LEFT JOIN avaliacoes a_all ON a_all.livro_id = l.id
+      WHERE a.usuario_id = $1
+      GROUP BY l.id, l.titulo, l.capa_url, l.isbn,
+               a.id, a.nota, a.comentario, a.data_criacao
+      ORDER BY a.data_criacao DESC
+    
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] Query executada com sucesso. Rows encontradas: 3
+[MEUS-LIVROS] Livros processados: 3
+[MEUS-LIVROS] Enviando resposta de sucesso
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:30:38.298Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:31:38.978Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:32:38.971Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:33:38.989Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:34:38.982Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:35:38.983Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:36:38.979Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:37:39.994Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:38:40.976Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:39:41.986Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:40:38.317Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:41:39.004Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:42:38.982Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:43:39.989Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:44:38.982Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:45:39.982Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:46:38.309Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:47:38.304Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:48:38.308Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:49:38.307Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:50:38.299Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:51:38.313Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:52:38.310Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:53:38.316Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:54:38.313Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:55:38.311Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:56:38.318Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:57:38.303Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:58:38.302Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:59:38.310Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T01:00:38.302Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T01:01:38.310Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T01:02:38.306Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:03:09.911Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:03:35.775Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:04:36.780Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:05:36.366Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:06:35.779Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:07:36.783Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:08:37.791Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:09:38.784Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:10:39.790Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T02:11:40.786Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}

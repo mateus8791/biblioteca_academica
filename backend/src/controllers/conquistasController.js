@@ -3,10 +3,22 @@
 const pool = require('../config/database');
 
 const getMinhasConquistas = async (req, res) => {
+  console.log('🔍 [CONQUISTAS] Requisição recebida');
+  console.log('🔍 [CONQUISTAS] req.usuario:', req.usuario);
+
+  if (!req.usuario || !req.usuario.id) {
+    console.error('❌ [CONQUISTAS] Token antigo detectado (sem campo id)');
+    console.error('❌ [CONQUISTAS] req.usuario:', req.usuario);
+    return res.status(401).json({
+      message: 'Token desatualizado. Por favor, faça logout e login novamente para gerar um novo token.',
+      code: 'TOKEN_OUTDATED'
+    });
+  }
+
   const { id: usuarioId } = req.usuario;
 
   try {
-    console.log(`Buscando dados de conquistas para o usuário: ${usuarioId}`);
+    console.log(`✅ [CONQUISTAS] Buscando dados de conquistas para o usuário: ${usuarioId}`);
 
     // --- CORREÇÃO: Separamos as consultas para evitar o erro de agregação ---
     const [

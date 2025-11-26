@@ -41,41 +41,92 @@ async function findOrCreateCategoria(client, nomeCategoria, usuarioId) {
 
 // --- 1. LISTAR TODOS OS LIVROS (com lógica de busca) ---
 const getAllBooks = async (req, res) => {
-  const { search } = req.query; // Pega o termo de busca da URL
+  const { search, categoria, autor, limit } = req.query;
 
   try {
     let queryParams = [];
-    let whereClause = '';
+    let whereConditions = [];
+    let paramIndex = 1;
 
-    // Se um termo de busca foi enviado, construímos a cláusula WHERE
+    // Filtro por termo de busca
     if (search) {
-      // Usamos ILIKE para uma busca "case-insensitive"
-      // Buscamos no título do livro E no nome do autor
-      whereClause = `
-        WHERE l.titulo ILIKE $1 OR a.nome ILIKE $1
-      `;
+      whereConditions.push(`(l.titulo ILIKE $${paramIndex} OR a.nome ILIKE $${paramIndex})`);
       queryParams.push(`%${search}%`);
+      paramIndex++;
     }
 
-    // Ajuste na query para buscar autores e categorias corretamente para exibição
+    // Filtro por categoria
+    if (categoria) {
+      whereConditions.push(`EXISTS (
+        SELECT 1 FROM livro_categoria lc
+        WHERE lc.livro_id = l.id AND lc.categoria_id = $${paramIndex}
+      )`);
+      queryParams.push(categoria);
+      paramIndex++;
+    }
+
+    // Filtro por autor
+    if (autor) {
+      whereConditions.push(`EXISTS (
+        SELECT 1 FROM livro_autor la
+        WHERE la.livro_id = l.id AND la.autor_id = $${paramIndex}
+      )`);
+      queryParams.push(autor);
+      paramIndex++;
+    }
+
+    const whereClause = whereConditions.length > 0
+      ? `WHERE ${whereConditions.join(' AND ')}`
+      : '';
+
+    const limitClause = limit ? `LIMIT ${parseInt(limit)}` : '';
+
+    // Query completa com todos os campos necessários
     const query = `
       SELECT
-        l.id, l.titulo, l.isbn, l.ano_publicacao, l.capa_url, l.quantidade_disponivel,
+        l.id,
+        l.titulo,
+        l.isbn,
+        l.ano_publicacao,
+        l.capa_url,
+        l.quantidade_disponivel,
+        l.preco,
+        l.preco_promocional,
+        l.promocao_ativa,
+        l.sinopse,
+        l.num_paginas,
+        l.editora,
         TO_CHAR(l.data_cadastro, 'DD/MM/YYYY') AS data_cadastro,
-        (SELECT STRING_AGG(a.nome, ', ') FROM autor a JOIN livro_autor la ON a.id = la.autor_id WHERE la.livro_id = l.id) AS autores_nomes,
-        (SELECT STRING_AGG(c.nome, ', ') FROM categoria c JOIN livro_categoria lc ON c.id = lc.categoria_id WHERE lc.livro_id = l.id) AS categorias_nomes
+        COALESCE(
+          json_agg(
+            DISTINCT jsonb_build_object('id', a.id, 'nome', a.nome, 'foto_url', a.foto_url)
+          ) FILTER (WHERE a.id IS NOT NULL),
+          '[]'
+        ) AS autores,
+        COALESCE(
+          json_agg(
+            DISTINCT jsonb_build_object('id', c.id, 'nome', c.nome)
+          ) FILTER (WHERE c.id IS NOT NULL),
+          '[]'
+        ) AS categorias
       FROM
         livro l
       LEFT JOIN
         livro_autor la ON l.id = la.livro_id
       LEFT JOIN
         autor a ON la.autor_id = a.id
+      LEFT JOIN
+        livro_categoria lc ON l.id = lc.livro_id
+      LEFT JOIN
+        categoria c ON lc.categoria_id = c.id
       ${whereClause}
       GROUP BY
         l.id
       ORDER BY
-        l.titulo ASC;
+        l.data_cadastro DESC, l.titulo ASC
+      ${limitClause};
     `;
+
     const { rows } = await pool.query(query, queryParams);
     res.status(200).json(rows);
   } catch (error) {
@@ -150,6 +201,75 @@ const getBooksByAuthor = async (req, res) => {
         res.status(200).json(rows);
     } catch (error) {
         console.error("Erro ao buscar livros por autor:", error);
+        res.status(500).json({ mensagem: "Erro interno do servidor." });
+    }
+};
+
+// --- BUSCAR LIVROS MAIS RECENTES (para landing page) ---
+const getNewBooks = async (req, res) => {
+    const limit = parseInt(req.query.limit) || 10;
+    try {
+        const query = `
+            SELECT
+                l.id, l.titulo, l.isbn, l.ano_publicacao, l.capa_url, l.quantidade_disponivel,
+                l.preco, l.preco_promocional, l.promocao_ativa, l.sinopse,
+                TO_CHAR(l.data_cadastro, 'DD/MM/YYYY') AS data_cadastro,
+                (SELECT json_agg(json_build_object('id', a.id, 'nome', a.nome)) FROM autor a JOIN livro_autor la ON a.id = la.autor_id WHERE la.livro_id = l.id) AS autores,
+                (SELECT json_agg(json_build_object('id', c.id, 'nome', c.nome)) FROM categoria c JOIN livro_categoria lc ON c.id = lc.categoria_id WHERE lc.livro_id = l.id) AS categorias
+            FROM livro l
+            WHERE l.quantidade_disponivel > 0
+            ORDER BY l.data_cadastro DESC
+            LIMIT $1;
+        `;
+        const { rows } = await pool.query(query, [limit]);
+        // Garantir que autores/categorias sejam arrays
+        const livrosFormatados = rows.map(livro => ({
+            ...livro,
+            autores: livro.autores || [],
+            categorias: livro.categorias || []
+        }));
+        res.status(200).json(livrosFormatados);
+    } catch (error) {
+        console.error("Erro ao buscar livros novos:", error);
+        res.status(500).json({ mensagem: "Erro interno do servidor." });
+    }
+};
+
+// --- BUSCAR LIVROS EM PROMOÇÃO (ofertas do dia) ---
+const getPromotionalBooks = async (req, res) => {
+    const limit = parseInt(req.query.limit) || 10;
+    try {
+        const query = `
+            SELECT
+                l.id, l.titulo, l.isbn, l.ano_publicacao, l.capa_url, l.quantidade_disponivel,
+                l.preco, l.preco_promocional, l.promocao_ativa, l.sinopse,
+                TO_CHAR(l.data_cadastro, 'DD/MM/YYYY') AS data_cadastro,
+                (SELECT json_agg(json_build_object('id', a.id, 'nome', a.nome)) FROM autor a JOIN livro_autor la ON a.id = la.autor_id WHERE la.livro_id = l.id) AS autores,
+                (SELECT json_agg(json_build_object('id', c.id, 'nome', c.nome)) FROM categoria c JOIN livro_categoria lc ON c.id = lc.categoria_id WHERE lc.livro_id = l.id) AS categorias
+            FROM livro l
+            WHERE l.promocao_ativa = true AND l.quantidade_disponivel > 0
+            ORDER BY
+                CASE
+                    WHEN l.preco_promocional IS NOT NULL AND l.preco > 0
+                    THEN ((l.preco - l.preco_promocional) / l.preco) * 100
+                    ELSE 0
+                END DESC,
+                l.data_cadastro DESC
+            LIMIT $1;
+        `;
+        const { rows } = await pool.query(query, [limit]);
+        // Garantir que autores/categorias sejam arrays e calcular desconto
+        const livrosFormatados = rows.map(livro => ({
+            ...livro,
+            autores: livro.autores || [],
+            categorias: livro.categorias || [],
+            desconto_percentual: livro.preco_promocional && livro.preco > 0
+                ? Math.round(((livro.preco - livro.preco_promocional) / livro.preco) * 100)
+                : 0
+        }));
+        res.status(200).json(livrosFormatados);
+    } catch (error) {
+        console.error("Erro ao buscar livros em promoção:", error);
         res.status(500).json({ mensagem: "Erro interno do servidor." });
     }
 };
@@ -491,5 +611,7 @@ module.exports = {
   getAvailableBooks,   // Adicionada
   getBooksByCategory,  // Adicionada
   getBooksByAuthor,    // Adicionada
-  importarLivrosCSV    // <- Adicionada a nova função
+  importarLivrosCSV,   // <- Adicionada a nova função
+  getNewBooks,         // <- Livros novos para landing
+  getPromotionalBooks  // <- Ofertas do dia para landing
 };

@@ -1,0 +1,840 @@
+
+> backend@1.0.0 start
+> nodemon src/server.js
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:07:05.333Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:07:05.464Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:07:10.319Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:07:32.065Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:07:32.150Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+Erro ao buscar livros lidos: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20 {
+  length: 107,
+  severity: 'ERRO',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '407',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable'
+}
+Stack trace: error: relação "avaliacoes" não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:170:20
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:07:37.981Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:08:38.976Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:17:53.997Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:17:57.545Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: SELECT
+        l.id,
+        l.titulo,
+        l.autor,
+        l.capa_url,
+        l.isbn
+       FROM livro l
+       LIMIT 0
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] ❌ ERRO CAPTURADO: coluna l.autor não existe
+[MEUS-LIVROS] Erro completo: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20 {
+  length: 101,
+  severity: 'ERRO',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '48',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+[MEUS-LIVROS] Stack trace: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20
+[MEUS-LIVROS] Código do erro: 42703
+[MEUS-LIVROS] Detalhes: undefined
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:17:57.564Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: SELECT
+        l.id,
+        l.titulo,
+        l.autor,
+        l.capa_url,
+        l.isbn
+       FROM livro l
+       LIMIT 0
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] ❌ ERRO CAPTURADO: coluna l.autor não existe
+[MEUS-LIVROS] Erro completo: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20 {
+  length: 101,
+  severity: 'ERRO',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '48',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+[MEUS-LIVROS] Stack trace: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20
+[MEUS-LIVROS] Código do erro: 42703
+[MEUS-LIVROS] Detalhes: undefined
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:18:02.977Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:19:03.987Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:21:10.613Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: SELECT
+        l.id,
+        l.titulo,
+        l.autor,
+        l.capa_url,
+        l.isbn
+       FROM livro l
+       LIMIT 0
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] ❌ ERRO CAPTURADO: coluna l.autor não existe
+[MEUS-LIVROS] Erro completo: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20 {
+  length: 101,
+  severity: 'ERRO',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '48',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+[MEUS-LIVROS] Stack trace: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20
+[MEUS-LIVROS] Código do erro: 42703
+[MEUS-LIVROS] Detalhes: undefined
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:21:10.969Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: SELECT
+        l.id,
+        l.titulo,
+        l.autor,
+        l.capa_url,
+        l.isbn
+       FROM livro l
+       LIMIT 0
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] ❌ ERRO CAPTURADO: coluna l.autor não existe
+[MEUS-LIVROS] Erro completo: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20 {
+  length: 101,
+  severity: 'ERRO',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '48',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+[MEUS-LIVROS] Stack trace: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20
+[MEUS-LIVROS] Código do erro: 42703
+[MEUS-LIVROS] Detalhes: undefined
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:21:13.076Z] GET /api/usuarios/meus-livros-lidos
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[MEUS-LIVROS] Iniciando busca para usuario_id: 00000000-0000-0000-0000-000000000002
+[MEUS-LIVROS] Executando SQL query: SELECT
+        l.id,
+        l.titulo,
+        l.autor,
+        l.capa_url,
+        l.isbn
+       FROM livro l
+       LIMIT 0
+[MEUS-LIVROS] Com parametros: [ '00000000-0000-0000-0000-000000000002' ]
+[MEUS-LIVROS] ❌ ERRO CAPTURADO: coluna l.autor não existe
+[MEUS-LIVROS] Erro completo: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20 {
+  length: 101,
+  severity: 'ERRO',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '48',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+[MEUS-LIVROS] Stack trace: error: coluna l.autor não existe
+    at C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\Usuario\biblioteca-academica\biblioteca-academica\backend\src\routes\avaliacoesRoutes.js:184:20
+[MEUS-LIVROS] Código do erro: 42703
+[MEUS-LIVROS] Detalhes: undefined
+
+========== NOVA REQUISIÇÃO ==========
+[2025-11-18T00:21:15.983Z] POST /api/session/heartbeat
+Authorization Header: Present
+====================================
+
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[authMiddleware] Iniciando verificação de token...
+[authMiddleware] Token válido! Dados decodificados: {
+  id: '00000000-0000-0000-0000-000000000002',
+  nome: 'Aluno Teste',
+  tipo_usuario: 'aluno',
+  foto_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9r4zvgWrXNv1e7lbVa8re3VyaLTjT-m53w&s',
+  accessLogId: 77,
+  iat: 1763424191,
+  exp: 1763452991
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/server.js`[39m
+
+[DEBUG] Configuração do Nodemailer: {
+  host: 'sandbox.smtp.mailtrap.io',
+  port: 2525,
+  user: 'Usuário OK',
+  pass: 'Senha OK'
+}
+🚀 Servidor rodando na porta 3001.
+[32m[nodemon] clean exit - waiting for changes before restart[39m
