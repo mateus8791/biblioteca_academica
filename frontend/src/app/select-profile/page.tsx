@@ -1,6 +1,8 @@
 // frontend/src/app/select-profile/page.tsx
 'use client';
 
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -36,6 +38,33 @@ const ProfileCard = ({
 );
 
 export default function ProfileSelectPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Verificar se o usuário já está logado
+    const usuarioJson = localStorage.getItem('bibliotech_usuario');
+    const token = localStorage.getItem('bibliotech_token');
+
+    if (usuarioJson && token) {
+      try {
+        const usuario = JSON.parse(usuarioJson);
+
+        // Redirecionar automaticamente baseado no tipo de usuário
+        if (usuario.tipo_usuario === 'admin' || usuario.tipo_usuario === 'bibliotecario') {
+          router.replace('/admin/livros');
+        } else if (usuario.tipo_usuario === 'aluno') {
+          router.replace('/catalogo');
+        }
+        // Se não tiver tipo reconhecido, continua na página para selecionar
+      } catch (error) {
+        console.error('Erro ao processar dados do usuário:', error);
+        // Se houver erro, limpa e permite seleção manual
+        localStorage.removeItem('bibliotech_usuario');
+        localStorage.removeItem('bibliotech_token');
+      }
+    }
+  }, [router]);
+
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
       <div className="text-center mb-10">

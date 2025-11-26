@@ -2,7 +2,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import DashboardLayout from '@/components/dashboard/DashboardLayout';
 import api from '@/services/api';
 import { Book, Users, BookUp, AlertTriangle } from 'lucide-react';
 import {
@@ -78,22 +77,17 @@ export default function RelatoriosPage() {
 
   if (loading) {
     return (
-        <DashboardLayout>
-            <div className="p-8"><p className="text-center">Carregando relatórios...</p></div>
-        </DashboardLayout>
+        <div className="p-8"><p className="text-center">Carregando relatórios...</p></div>
     );
   }
 
   if (error) {
     return (
-        <DashboardLayout>
-            <div className="p-8"><p className="text-center text-red-500">{error}</p></div>
-        </DashboardLayout>
+        <div className="p-8"><p className="text-center text-red-500">{error}</p></div>
     );
   }
-  
+
   return (
-    <DashboardLayout>
       <main className="p-4 sm:p-6 md:p-8 bg-gray-50 min-h-screen">
         <h1 className="text-3xl font-bold text-gray-900 mb-6">Dashboard de Relatórios</h1>
 
@@ -152,6 +146,5 @@ export default function RelatoriosPage() {
           </div>
         </div>
       </main>
-    </DashboardLayout>
   );
 }

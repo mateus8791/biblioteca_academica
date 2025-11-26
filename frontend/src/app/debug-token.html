@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Token</title>
+    <style>
+        body { font-family: monospace; padding: 20px; background: #1e1e1e; color: #fff; }
+        pre { background: #2d2d2d; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        button { padding: 10px 20px; margin: 10px 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Debug Token JWT</h1>
+    <button onclick="showToken()">Mostrar Token</button>
+    <button onclick="decodeToken()">Decodificar Token</button>
+    <button onclick="clearToken()">Limpar Token</button>
+    <button onclick="testAPI()">Testar API /conquistas</button>
+
+    <div id="output"></div>
+
+    <script>
+        const output = document.getElementById('output');
+
+        function showToken() {
+            const token = localStorage.getItem('bibliotech_token');
+            const usuario = localStorage.getItem('bibliotech_usuario');
+
+            output.innerHTML = `
+                <h2>Token armazenado:</h2>
+                <pre>${token || 'Nenhum token encontrado'}</pre>
+                <h2>Usuário armazenado:</h2>
+                <pre>${usuario || 'Nenhum usuário encontrado'}</pre>
+            `;
+        }
+
+        function decodeToken() {
+            const token = localStorage.getItem('bibliotech_token');
+            if (!token) {
+                output.innerHTML = '<p style="color: red;">Nenhum token encontrado!</p>';
+                return;
+            }
+
+            try {
+                // Decodifica o JWT (apenas a parte do payload, sem verificar assinatura)
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                }).join(''));
+
+                const decoded = JSON.parse(jsonPayload);
+
+                output.innerHTML = `
+                    <h2>Token decodificado:</h2>
+                    <pre>${JSON.stringify(decoded, null, 2)}</pre>
+                    <h3>Informações importantes:</h3>
+                    <ul>
+                        <li><strong>ID do usuário:</strong> ${decoded.id}</li>
+                        <li><strong>Tipo do usuário:</strong> ${decoded.tipo}</li>
+                        <li><strong>Expiração:</strong> ${new Date(decoded.exp * 1000).toLocaleString('pt-BR')}</li>
+                        <li><strong>Token expirado?</strong> ${decoded.exp * 1000 < Date.now() ? 'SIM ❌' : 'NÃO ✅'}</li>
+                    </ul>
+                `;
+            } catch (error) {
+                output.innerHTML = `<p style="color: red;">Erro ao decodificar: ${error.message}</p>`;
+            }
+        }
+
+        function clearToken() {
+            localStorage.removeItem('bibliotech_token');
+            localStorage.removeItem('bibliotech_usuario');
+            output.innerHTML = '<p style="color: green;">Token removido com sucesso! Recarregue a página e faça login novamente.</p>';
+        }
+
+        async function testAPI() {
+            const token = localStorage.getItem('bibliotech_token');
+
+            if (!token) {
+                output.innerHTML = '<p style="color: red;">Nenhum token encontrado! Faça login primeiro.</p>';
+                return;
+            }
+
+            try {
+                output.innerHTML = '<p>Testando API /conquistas...</p>';
+
+                const response = await fetch('http://localhost:3001/api/conquistas', {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const data = await response.json();
+
+                output.innerHTML = `
+                    <h2>Resposta da API:</h2>
+                    <p><strong>Status:</strong> ${response.status} ${response.statusText}</p>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                `;
+            } catch (error) {
+                output.innerHTML = `<p style="color: red;">Erro ao testar API: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

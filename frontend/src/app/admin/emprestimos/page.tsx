@@ -2,7 +2,6 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import DashboardLayout from '@/components/dashboard/DashboardLayout';
 import api from '@/services/api';
 import { DollarSign, BookUp, TrendingUp, HandCoins } from 'lucide-react';
 import {
@@ -111,8 +110,8 @@ export default function GerenciamentoEmprestimosPage() {
     setIsModalOpen(true);
   };
 
-  if (loading) return <DashboardLayout><div className="p-8 text-center">Carregando dashboard...</div></DashboardLayout>;
-  if (error || !dashboardData) return <DashboardLayout><div className="p-8 text-center text-red-500">{error || 'Dados não encontrados'}</div></DashboardLayout>;
+  if (loading) return <div className="p-8 text-center">Carregando dashboard...</div>;
+  if (error || !dashboardData) return <div className="p-8 text-center text-red-500">{error || 'Dados não encontrados'}</div>;
   
   const chartData = dashboardData.livrosMaisPopulares.map(livro => ({
       name: livro.titulo,
@@ -123,7 +122,6 @@ export default function GerenciamentoEmprestimosPage() {
 
   return (
     <>
-      <DashboardLayout>
         <main className="p-4 sm:p-6 md:p-8 bg-gray-50">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Gerenciamento de Empréstimos e Finanças</h1>
           
@@ -160,8 +158,7 @@ export default function GerenciamentoEmprestimosPage() {
           </div>
           <TabelaEmprestimos data={dashboardData.emprestimosRecentes} />
         </main>
-      </DashboardLayout>
-      
+
       <TransacaoFinanceiraModal 
         isOpen={!!modalType}
         onClose={() => setModalType(null)}

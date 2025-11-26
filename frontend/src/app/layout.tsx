@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { AuthProvider, useAuth } from '../contexts/AuthContext'; // Caminho para o seu AuthContext
+import { NotificationProvider } from '../contexts/NotificationContext'; // Provider de notificações
 import { useState, useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,6 +14,9 @@ import SupportButton from './admin/emprestimos/components/SupportButton';
 
 // 3. Caminho com alias (padrão) para o NotificationPopup (certifique-se que ele está em src/components/)
 import NotificationPopup from '@/components/NotificationPopup';
+
+// 4. HeartbeatProvider para rastreamento de sessão
+import HeartbeatProvider from '@/components/HeartbeatProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -120,7 +124,11 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <AuthProvider>
-          <LayoutContent>{children}</LayoutContent>
+          <HeartbeatProvider>
+            <NotificationProvider>
+              <LayoutContent>{children}</LayoutContent>
+            </NotificationProvider>
+          </HeartbeatProvider>
         </AuthProvider>
       </body>
     </html>

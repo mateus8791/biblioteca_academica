@@ -48,9 +48,27 @@ export default function MinhasConquistasPage() {
       try {
         const response = await api.get('/conquistas');
         setData(response.data);
-      } catch (err) {
-        setError('Não foi possível carregar seus dados.');
-        console.error(err);
+      } catch (err: any) {
+        // Mensagens de erro mais específicas
+        if (err.response) {
+          // Erro com resposta do servidor
+          if (err.response.status === 401) {
+            setError('Sessão expirada. Você será redirecionado para o login.');
+          } else if (err.response.status === 403) {
+            setError('Você não tem permissão para acessar estas informações.');
+          } else if (err.response.status === 404) {
+            setError('Endpoint de conquistas não encontrado. Verifique se o backend está atualizado.');
+          } else {
+            setError(`Erro ao carregar dados: ${err.response.data?.message || err.response.statusText}`);
+          }
+        } else if (err.request) {
+          // Erro de rede
+          setError('Não foi possível conectar ao servidor. Verifique sua conexão e se o backend está rodando.');
+        } else {
+          // Erro desconhecido
+          setError('Erro inesperado ao carregar seus dados.');
+        }
+        console.error('Erro ao buscar conquistas:', err);
       } finally {
         setLoading(false);
       }
